@@ -1,6 +1,7 @@
 #include <ctime>
 #include "day1/day1.cpp"
 #include "day2/day2.cpp"
+#include "day3/day3.cpp"
 
 using namespace std;
 
@@ -17,4 +18,5 @@ void CallSolver(int day, void (*solver) ()) {
 int main() {
     CallSolver(1, day_1::Solve);
     CallSolver(2, day_2::Solve);
+    CallSolver(3, day_3::Solve);
 }
