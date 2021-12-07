@@ -1,0 +1,18 @@
+#include <ctime>
+#include "day1/day1.cpp"
+
+using namespace std;
+
+void CallSolver(int day, void (*solver) ()) {
+    clock_t start_time = clock();
+
+    cout << "== Day " << day << " ==" << endl;
+    solver();
+
+    clock_t end_time = clock();
+    cout << "Finished day " << day << " in " << end_time - start_time << " ms" << endl << endl;
+}
+
+int main() {
+    CallSolver(1, day_1::Solve);
+}
